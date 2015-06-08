@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+       <com.easemob.chatuidemo.widget.TopView 
+           android:id="@+id/top_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+           
+           ></com.easemob.chatuidemo.widget.TopView>
+
+        <!-- 页面内容 -->
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/img_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/background_btn_shadow" />
+        <!-- 选项卡 -->
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="52dp"
+            android:layout_weight="0"
+            android:background="@drawable/background_btn_bottom" >
+        </TabWidget>
+    </LinearLayout>
+
+</TabHost>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_all_page" >
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:focusable="true"
+          android:id="@+id/edit_information"
+            android:hint="请输入您要发布的内容"
+            android:focusableInTouchMode="true" />
+
+        <LinearLayout
+            android:id="@+id/layout03"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <GridView
+                android:id="@+id/myGrid"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/photo_rect_bg"
+                android:columnWidth="75dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:horizontalSpacing="10dp"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="auto_fit"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp" />
+        </LinearLayout>
+
+        
+          <RelativeLayout
+            android:id="@+id/rl_02"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:onClick="unit"
+            android:visibility="gone"
+            android:background="@drawable/background_item" >
+
+            <ImageView
+                android:id="@+id/img_publish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/img_category" />
+
+            <TextView
+                android:id="@+id/tv_publish"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/img_publish"
+                android:gravity="center"
+                android:text="所在单位"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+              <TextView
+                android:id="@+id/tv_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/tv_publish"
+                android:gravity="center"
+                android:text="(必选项)"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/dp_margin_left"
+                android:src="@drawable/divider_line_short" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_03"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:onClick="category"
+            android:background="@drawable/background_item" >
+
+            <ImageView
+                android:id="@+id/img_manager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/img_unit" />
+
+            <TextView
+                android:id="@+id/tv_manager"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/img_manager"
+                android:gravity="center"
+                android:text="广场类型"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/tv_square"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/tv_manager"
+                android:gravity="center"
+                android:text="(必选项)"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/dp_margin_left"
+                android:src="@drawable/divider_line_short" />
+        </RelativeLayout>
+        <Button
+            android:id="@+id/addBtn"
+            android:layout_marginTop="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:textColor="#fff"
+            android:background="@drawable/background_title"
+            android:text="上传" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/background_main_top" >
+
+        <FrameLayout
+            android:id="@+id/fm_back_title"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/img_back_title"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/back_title" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fm_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="广场"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fm_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:id="@+id/img_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/background_add" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fm_gift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/fm_add"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/img_gift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/background_gift" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <com.ab.view.pullview.AbPullToRefreshView
+        android:id="@+id/qunaner_pull_to_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title" >
+
+        <ListView
+            android:id="@+id/lv_square"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fastScrollEnabled="false"
+            android:cacheColorHint="@null"
+            android:divider="@drawable/line_divider" >
+        </ListView>
+    </com.ab.view.pullview.AbPullToRefreshView>
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_item"
+    android:paddingBottom="10dp"
+   >
+    <ImageView 
+        android:id="@+id/img_avater"
+        android:layout_width="86dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/umeng_socialize_share_pic"
+        />
+    <LinearLayout 
+        android:id="@+id/ll_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/img_avater"
+        android:layout_alignBottom="@id/img_avater"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/img_avater"
+        android:layout_marginRight="10dp"
+        >
+        <RelativeLayout 
+            android:id="@+id/ll_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+            >
+            
+            <TextView 
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:textColor="@color/black_deep"
+                android:text="人事部陆经理"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_centerVertical="true"
+                />
+            
+        </RelativeLayout>
+        <TextView 
+            android:id="@+id/tv_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_normal"
+            android:textSize="14sp"
+            android:text="请18号店，26号店，103号店店长将考勤表及时上传"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_marginRight="10dp"
+            />
+        <TextView 
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textSize="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/gray_normal"
+                android:text="上午11：15"
+               android:layout_gravity="bottom|right"
+                />
+    </LinearLayout>
+
+</RelativeLayout>

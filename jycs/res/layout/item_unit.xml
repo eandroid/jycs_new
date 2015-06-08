@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+            android:id="@+id/rl_02"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/background_item" >
+
+            <ImageView
+                android:id="@+id/img_publish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:visibility="gone"
+                android:src="@drawable/img_publish" />
+
+            <TextView
+                android:id="@+id/tv_publish"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/img_publish"
+                android:gravity="center"
+                android:text="单位名称"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+              <TextView
+                android:id="@+id/tv_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/tv_publish"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/dp_margin_left"
+                android:layout_marginRight="@dimen/dp_margin_left"
+                android:src="@drawable/divider_line_short" />
+        </RelativeLayout>
+
+</LinearLayout>

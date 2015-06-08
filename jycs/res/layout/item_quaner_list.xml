@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_item"
+    android:paddingBottom="10dp" >
+
+    <ImageView
+        android:id="@+id/img_avater"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/image_error" />
+
+    <LinearLayout
+        android:id="@+id/ll_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/img_avater"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/img_avater"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#3a3a3a"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="红牛20元一箱(含运费)，生产日期2014年8月，保质期18个月，开增值税发票，100箱起订，需要的赶快联系，联系人###"
+            android:textColor="#3a3a3a"
+            android:textSize="14sp" />
+
+        <com.easemob.chatuidemo.widget.NoScrollGridView
+            android:id="@+id/img_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:horizontalSpacing="5dp"
+            android:verticalSpacing="5dp"
+            android:numColumns="3"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:text="2015-3-2 10:00:00"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_all_page"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/background_title" >
+
+        <FrameLayout
+            android:id="@+id/fm_back_title"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="back"
+            android:layout_marginLeft="10dp" >
+
+            <ImageView
+                android:id="@+id/img_back_title"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/back_title" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="门店展示"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <com.ab.view.pullview.AbPullToRefreshView
+        android:id="@+id/store_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/lv_store_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/line_divider"
+            android:scrollbars="none" >
+        </ListView>
+    </com.ab.view.pullview.AbPullToRefreshView>
+
+</LinearLayout>

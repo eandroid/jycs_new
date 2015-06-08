@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/fm_pager"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" >
+
+        <com.easemob.chatuidemo.widget.ChildViewPager
+            android:id="@+id/vp_store"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </com.easemob.chatuidemo.widget.ChildViewPager>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/vp_store_bottom" >
+
+            <ImageView
+                android:id="@+id/img_point1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/tagvewpager_point01" />
+
+            <ImageView
+                android:id="@+id/img_point2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/img_point1"
+                android:src="@drawable/tagvewpager_point02" />
+
+            <ImageView
+                android:id="@+id/img_point3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/img_point2"
+                android:src="@drawable/tagvewpager_point02" />
+
+            <ImageView
+                android:id="@+id/img_point4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:visibility="gone"
+                android:layout_toRightOf="@id/img_point3"
+                android:src="@drawable/tagvewpager_point02" />
+
+            <TextView
+                android:id="@+id/tv_store_intro"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text="上海教育超市门店学生信得过的门店"
+                android:textColor="@android:color/white"
+                android:textSize="13sp" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

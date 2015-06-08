@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_all_page"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/background_title" >
+
+        <FrameLayout
+            android:id="@+id/fm_back_title"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp" >
+
+            <ImageView
+                android:id="@+id/img_back_title"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:onClick="onback"
+                android:src="@drawable/back_title" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="详细资料"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rv_01"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/background_item_normal" >
+
+        <ImageView
+            android:id="@+id/img_avater"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/dp_margin_left"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/avatar_notify_demo2" />
+
+<!--             android:drawableRight="@drawable/icon_man" -->
+        <TextView
+            android:id="@+id/tv_avater_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/img_avater"
+            android:layout_marginLeft="@dimen/dp_margin_left"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/img_avater"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="其他人"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_avater_invidator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/tv_avater_name"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/dp_margin_left"
+            android:layout_toRightOf="@id/img_avater"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="帐号:13033333333"
+            android:textColor="@color/color_text_all_gray"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/img_collection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_margin_left"
+            android:src="@drawable/collection_normal"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_02"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/background_item" >
+
+        <ImageView
+            android:id="@+id/img_publish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/img_publish"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_publish"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/img_publish"
+            android:gravity="center"
+            android:text="姓名"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tv_publish"
+            android:gravity="center"
+            android:text="xing"
+            android:textColor="@color/color_text_all_gray"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dp_margin_left"
+            android:src="@drawable/divider_line_short" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_03"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/background_item" >
+
+        <ImageView
+            android:id="@+id/img_manager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/img_manager"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_manager"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/img_manager"
+            android:gravity="center"
+            android:text="职务"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tv_manager"
+            android:gravity="center"
+            android:text="上海市徐家汇"
+            android:textColor="@color/color_text_all_gray"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dp_margin_left"
+            android:src="@drawable/divider_line_short" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_04"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/background_item" >
+
+        <ImageView
+            android:id="@+id/img_cloud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/img_cloud"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_cloud"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/img_cloud"
+            android:gravity="center"
+            android:text="手机号码"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_category"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tv_cloud"
+            android:gravity="center"
+            android:text="上海地区003店店长"
+            android:clickable="true"
+            android:onClick="call"
+            android:textColor="@color/color_text_all_gray"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dp_margin_left"
+            android:src="@drawable/divider_line_short" />
+    </RelativeLayout>
+<RelativeLayout
+        android:id="@+id/rl_05"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/background_item" >
+
+        <ImageView
+            android:id="@+id/img_cloud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/img_cloud"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_category_self"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/img_cloud"
+            android:gravity="center"
+            android:text="所在单位"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_category2"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf ="@id/tv_category_self"
+            android:gravity="center"
+            android:text="上海地区003店店长"
+            android:textColor="@color/color_text_all_gray"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/dp_margin_left"
+            android:src="@drawable/divider_line_short" />
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:visibility="gone"
+        android:id="@+id/img_send_msg"
+        android:src="@drawable/img_send_msg" />
+
+</LinearLayout>

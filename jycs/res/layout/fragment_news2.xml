@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.ab.view.pullview.AbPullToRefreshView
+        android:id="@+id/news_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/lv_news_slide"
+            android:layout_width="match_parent"
+            android:cacheColorHint="@null"
+            android:fastScrollEnabled="false"
+            android:layout_height="match_parent"
+            android:divider="@drawable/line_divider" >
+        </ListView>
+    </com.ab.view.pullview.AbPullToRefreshView>
+
+</LinearLayout>

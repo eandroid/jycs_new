@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/splash_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo"
+    >
+
+   <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginBottom="50dp"
+        android:shadowColor="#FFFFFF"
+        android:shadowDx="0"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        android:textColor="#444444"
+        android:textSize="20sp"
+        android:typeface="serif" >
+    </TextView>
+
+</RelativeLayout>

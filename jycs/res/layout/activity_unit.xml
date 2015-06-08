@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/background_main_top" >
+
+        <FrameLayout
+            android:id="@+id/fm_gift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/back_title" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fm_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="所在单位"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fm_submit_album"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+             >
+
+            <TextView
+                android:id="@+id/tv_send_square"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="完成"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fm_gift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/img_gift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/background_gift" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    
+        <ListView
+            android:layout_marginTop="20dp"
+            android:id="@+id/lv_unit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+  
+</LinearLayout>
